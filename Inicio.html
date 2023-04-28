@@ -9,16 +9,19 @@
 <body>
     <body background="https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000"></body>
 <center> <h1 style="color: green; font-size: 100px;"></a> Jugueria certus</h1></center>
-    <button>Open Jugueria Certus</button> 
-
+    <button>Jugueria Certus</button> 
     <br>
-    <label for="interes">Producto de interes</label>
-    <select id="interes">
-        <option value="">Seleccion</option>
-        <option href="/Jugos.html">Jugos</option>
-        <option value="">Surtidos</option>
-        <option value="">Postres</option>
-        <option value="">Promociones</option>
+    <form action="procesar.php" method="post">
+        <label for="interes">Selecciona una opción:</label>
+        <select id="interes" name="interes">
+            <option value="nada">Seleccion</option>
+            <option value="Jugos.html">Jugos</option>
+            <option value="">Surtidos</option>
+            <option value="postres">Postres</option>
+            <option value="promociones">Promociones</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>    
     </select>
 </body>
 </html>
